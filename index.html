@@ -25,10 +25,17 @@
             100% { box-shadow: 0 0 0 0 rgba(0, 255, 255, 0); }
         }
 
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         body {
             font-family: 'Roboto', sans-serif;
-            background: url("https://coolbackgrounds.io/images/backgrounds/black/black-compute-ea4c57a4.png") no-repeat center center fixed;
-            background-size: cover;
+            background: linear-gradient(270deg, #0f0c29, #302b63, #24243e);
+            background-size: 600% 600%;
+            animation: gradientBG 15s ease infinite;
             color: white;
             text-align: center;
             padding: 20px;
